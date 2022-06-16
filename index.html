@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-dark text-bg-dark py-3 sticky-top">
+        <div class="container">
+            <div class="brand">
+                <h1 class="mb-0">WarmBread</h1>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="navbar-text">
+                        <a href="#breads" class="nav-link">Our Breads</a>
+                    </li>
+                    <li class="navbar-text">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="navbar-text">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="navbar-text">
+                        <a href="#recipes" class="nav-link">Recipes</a>
+                    </li>
+                    <li class="navbar-text">
+                        <a href="#wholesale" class="nav-link">Wholesale</a>
+                    </li>
+                    <li class="navbar-text">
+                        <a href="#location" class="nav-link">Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- jumbotron -->
+    <div class="hero container-fluid text-center text-light px-0">
+        <div class="overlay p-5 d-flex align-items-center justify-content-center flex-column">
+            <h1 class="fw-bold display-3">We are an artisan bakery </h1>
+            <p class="my-5">
+                We are based in London
+                serving the best cafes and restaurants across London and its environs
+            </p>
+            <p>Fragrant. Fresh. Irresistible.</p>
+        </div>
+    </div>
+    <!-- end jumbotron -->
+
+    <!-- main 1 -->
+    <main class="container">
+        <!-- handcrafted -->
+        <section class="handcrafted text-center">
+            <h2 class="mb-4">Handcrafted</h2>
+            <p>
+                WarmBread is best known for our viennoiserie and naturally leavened bread. We use only the highest
+                quality ingredients in a creative, passionate, and hard-working environment. We prefer a family approach
+                to traditional methods of baking having it driven by exciting ideas and the smiles of our clients.
+            </p>
+        </section>
+
+        <!-- breads -->
+        <section class="featured-breads text-center" id="breads">
+            <h2 class="mb-4">Featured Breads</h2>
+
+            <div class="card-wrapper row justify-content-between">
+                <div class="card border border-light col-3 mx-auto" style="width: 17.5rem;">
+                    <img src="assets/Quinoa-Sourdough.jpg" class="card-img-top">
+                    <div class="card-body text-start">
+                        <h4 class="card-title">Quinoa Sourdough</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+                <div class="card border border-light col-3 mx-auto" style="width: 17.5rem;">
+                    <img src="assets/Danish-Sourdough.jpg" class="card-img-top">
+                    <div class="card-body text-start">
+                        <h4 class="card-title">Danish Sourdough</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+                <div class="card border border-light col-3 mx-auto" style="width: 17.5rem;">
+                    <img src="assets/Cranberry-Sourdough.jpg" class="card-img-top">
+                    <div class="card-body text-start">
+                        <h4 class="card-title">Cranberry Sourdough</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+                <div class="card border border-light col-3 mx-auto" style="width: 17.5rem;">
+                    <img src="assets/Hove-Wholemeal.jpg" class="card-img-top">
+                    <div class="card-body text-start">
+                        <h4 class="card-title">Hove Wholemeal</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- menu -->
+        <section class="menu text-center" id="menu">
+            <h2 class="mb-4">Our Menu</h2>
+            <p class="mb-5">Choose from our menu of delicious loaves and pastries freshly served on your table or
+                brought at your doorstep</p>
+
+            <input type="radio" name="tabs" id="salads" checked>
+            <input type="radio" name="tabs" id="breakfast">
+            <input type="radio" name="tabs" id="lunch_dinner">
+
+            <!-- nav tabs -->
+            <ul class="nav nav-tabs justify-content-around mb-5">
+                <li class="nav-item h3">
+                    <label class="salads" for="salads">Salads</label>
+                </li>
+                <li class="nav-item h3">
+                    <label class="breakfast" for="breakfast">Breakfast</label>
+                </li>
+                <li class="nav-item h3">
+                    <label class="lunch-dinner" for="lunch_dinner">Lunch & Dinner</label>
+                </li>
+            </ul>
+
+            <!-- salads -->
+            <section class="tabs tabs-salads">
+                <div class="row text-start">
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Lentil & Goat Cheese Salad<span class="float-end">$75</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Teriyaki Salmon Nicoise Salad<span class="float-end">$75</span>
+                                </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Chicken Salad<span class="float-end">$75</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Rare Roast Beef Salad<span class="float-end">$75</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- breakfast -->
+            <section class="tabs tabs-breakfast">
+                <div class="row text-start">
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Cinnamon Swirl<span class="float-end">$3</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Danish Roll with Cheese<span class="float-end">$3</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Carrot Juice, 250 ml<span class="float-end">$4</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    Seasonal Fruit Skyr<span class="float-end">$4</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Carrot Bun<span class="float-end">$3</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Café Latte<span class="float-end">$5</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- lunch and dinner -->
+            <section class="tabs tabs-lunch-dinner">
+                <div class="row text-start">
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Potato Focaccia<span class="float-end">$3</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Vegetarian Stew<span class="float-end">$6</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Mackerel on Rye<span class="float-end">$5</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    Ham & Cheese Baguette<span class="float-end">$4</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    Goat's Cheese Focaccia<span class="float-end">$3</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h3 class="card-title">Tiger Prawn Baguette<span class="float-end">$5</span></h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+                                    quo consequuntur eius, beatae maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <button class="btn btn-outline-secondary mt-5">Download Menu</button>
+        </section>
+
+        <!-- about -->
+        <section class="about-us text-center" id="about">
+            <h2 class="mb-4">About Us</h2>
+            <p class="mb-5">
+                WarmBread Bakery is a boutique bakery based in London. We proudly create handcrafted bread that is
+                organic and healthy. Our bread is made of premium ingredients and fresh seasonal flavours: spinach,
+                carrots, berries, seeds, nuts — all healthy and fresh. WarmBread Bakery products are rich in protein,
+                oils, nuts and fibres to keep you energised and healthy all day long.
+            </p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="assets/about-1.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/about-2.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/about-3.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <button class="btn btn-outline-secondary mt-5">Read More</button>
+        </section>
+    </main>
+    <!-- end main 1 -->
+
+    <!-- quote -->
+    <section class="quote container-fluid bg-secondary d-flex align-items-center">
+        <div class="row">
+            <div class="text-bg-light col-lg-6 p-4">
+                <h2>Our Bread Philosophy</h2>
+                <p>We believe that bread should be healthy. We want to change the traditional ways of eating bread by
+                    using local, fresh & organic ingredients in a better, more nutritious bread that's actually healthy.
+                    Our bread is 100% handicraft and includes veggies such as spinach, kale, sage, basil, nuts, whole
+                    grains and superfood ingredients.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end quote -->
+
+    <!-- recipes 2 -->
+    <section class="recipes container text-center" id="recipes">
+        <h2 class="mb-5">Recipes</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/recipe-1.jpg" class="img-fluid">
+                <h3 class="text-start">Breakfast Healthy Sandwich</h3>
+                <p class="text-start"><i class="far fa-clock me-2"></i>3 min preparation</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/recipe-2.jpg" class="img-fluid">
+                <h3 class="text-start">Honey Roll Up</h3>
+                <p class="text-start"><i class="far fa-clock me-2"></i>10 min preparation</p>
+
+                <img src="assets/recipe-3.jpg" class="img-fluid">
+                <h3 class="text-start">Pizza Bagels</h3>
+                <p class="text-start"><i class="far fa-clock me-2"></i>20 min preparation</p>
+            </div>
+        </div>
+        <button class="btn btn-outline-secondary mt-5">Browse All Recipes</button>
+    </section>
+    <!-- recipes main 2 -->
+
+    <!-- wholesale -->
+    <section
+        class="wholesale container-fluid text-bg-secondary text-center d-flex justify-content-center align-items-center flex-column" id="wholesale">
+        <h2>For Wholesale Buyer</h2>
+        <button class="btn btn-outline-light my-5">Download Pricelist</button>
+    </section>
+    <!-- end wholesale -->
+
+    <!-- location -->
+    <section class="location container text-center" id="location">
+        <h2 class="mb-5">Our Location</h2>
+
+        <div class="row align-items-center justify-content-xl-between justify-content-center">
+            <div class="card col-sm-4 border-0" style="width: 22rem;">
+                <h3 class="card-title">St. James Market</h5>
+                    <img src="assets/shop-1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">56 Haymarket No 2,</p>
+                        <p class="card-text">London, SW1Y 4RP.</p>
+                        <a href="#" class="">+1 (234) 567 89 00</a>
+                    </div>
+            </div>
+
+            <div class="card col-sm-4 border-0" style="width: 22rem;">
+                <h3 class="card-title">Richmond</h5>
+                    <img src="assets/shop-2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">59 George Street</p>
+                        <p class="card-text">London, TW91HE</p>
+                        <a href="#" class="">+1 (234) 567 89 01</a>
+                    </div>
+            </div>
+
+            <div class="card col-sm-4 border-0" style="width: 22rem;">
+                <h3 class="card-title">Canary Wharf</h5>
+                    <img src="assets/shop-3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">CR34, Crossrail Place</p>
+                        <p class="card-text">London, E145AR</p>
+                        <a href="#" class="">+1 (234) 567 89 02</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- end location -->
+
+    <!-- footer -->
+    <footer class="container-fluid text-bg-secondary py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="mb-3">WarmBread</h3>
+                    <p class="my-0">Mon-Sat 8am-6pm</p>
+                    <p>Sun 8am-4pm</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="mb-3">Follow Us</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="youtube.com"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+
+    <!-- JavaScript -->
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

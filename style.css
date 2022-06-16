@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.hero {
+    background-image: url(assets/hero.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+}
+
+.overlay > p {
+    font-size: 1.75rem;
+}
+
+.handcrafted {
+    margin-top: 100px;
+}
+
+.menu > p,
+.about-us p {
+    font-size: 1.25rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.salads:hover,
+.breakfast:hover,
+.lunch-dinner:hover {
+    cursor: pointer;
+}
+
+#salads:checked ~ .nav-tabs .nav-item .salads,
+#breakfast:checked ~ .nav-tabs .nav-item .breakfast,
+#lunch_dinner:checked ~ .nav-tabs .nav-item .lunch-dinner {
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+section .tabs {
+    display: none;
+}
+
+#salads:checked ~ .tabs-salads,
+#breakfast:checked ~ .tabs-breakfast,
+#lunch_dinner:checked ~ .tabs-lunch-dinner {
+    display: block;
+}
+
+.handcrafted,
+.featured-breads,
+.menu,
+.about-us,
+.recipes,
+.location {
+    margin-bottom: 200px;
+}
+
+.quote {
+    padding: 5rem;
+    margin-bottom: 100px;
+}
+
+.wholesale {
+    height: 330px;
+    margin-bottom: 100px;
+}
+
+.list-inline-item a {
+    font-size: 2rem;
+    color: black;
+}
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .overlay {
+        padding: 0;
+    }
+
+    .overlay > h1 {
+        font-size: 1.75rem;
+    }
+
+    .overlay > p {
+        font-size: 1.25rem;
+    }
+
+    .quote {
+        padding: 2rem;
+    }
+}
